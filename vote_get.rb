@@ -26,6 +26,11 @@ class MyApp < Sinatra::Base
     session[:last_date] = @date
     slim :index
   end
+
+  post '/index' do
+    @value = "#{params[:data]}"
+  end
+
 end
 
 MyApp.run!
