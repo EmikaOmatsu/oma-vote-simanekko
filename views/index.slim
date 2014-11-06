@@ -22,6 +22,10 @@ html lang="ja"
           |
             パスワード
         input.formArea__inputArea type="password" name="data[Member][password]"
+        input type="submit"
+
+      p.lastDate
+        = session[:last_date]
 
       p.voteDate
         = @date
